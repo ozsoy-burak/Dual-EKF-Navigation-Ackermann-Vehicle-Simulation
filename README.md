@@ -7,8 +7,7 @@ This project presents a hierarchical control and estimation framework that enabl
 <img width="2816" height="1536" alt="int" src="https://github.com/user-attachments/assets/f832682d-92ba-43ff-8458-34ee2de62654" />
 
   **Figure 1: System Architecture**
-
-
+<br><br>
 
 **Implemented Work and System Components**
 
@@ -25,6 +24,7 @@ A custom mathematical simulation environment was developed to reflect real-world
 <img width="544" height="389" alt="ackk" src="https://github.com/user-attachments/assets/20a1c65a-52d5-422c-8b41-f8e1eb74d13e" />
 
   **Figure 2: Ackermann Kinematic Models**
+<br><br>
 
 
 
@@ -57,15 +57,22 @@ The localization unit operates in two stages following ROS REP-105 standards:
 <img width="920" height="780" alt="START" src="https://github.com/user-attachments/assets/c15e0788-daff-47b4-85ac-7e2d0b2d2c3c" />
 
   **Figure 3: True/Local/Global EKF Outputs**
+  <br><br>
+
+<img width="975" height="659" alt="Screenshot from 2026-03-30 19-21-25" src="https://github.com/user-attachments/assets/3c6665b8-5f28-44bc-993c-9d3e3f336e9f" />
+
+  **Figure 5: Comparing Local Odometry/Global Odometry/True State**
+  <br><br>
+
+
 
 <img width="316" height="244" alt="Screenshot from 2026-03-30 19-22-46" src="https://github.com/user-attachments/assets/e9234d28-0350-4063-8241-b026da2dd1a6" />
 
   **Figure 4: Map->Odom Tf Transformation**
 
-  
-<img width="975" height="659" alt="Screenshot from 2026-03-30 19-21-25" src="https://github.com/user-attachments/assets/3c6665b8-5f28-44bc-993c-9d3e3f336e9f" />
+  <br><br>
 
-  **Figure 5: Comparing Local Odometry/Global Odometry/True State**
+
 
 **Pure Pursuit Navigation and Goal-Reaching Control**
 
@@ -77,6 +84,8 @@ The control module leverages the calculated localization to guide the vehicle to
 <img width="958" height="746" alt="Screenshot from 2026-03-30 19-33-27" src="https://github.com/user-attachments/assets/79855f17-ef86-4e03-9c09-c58a41ac3219" />
 
   **Figure 6: Target Points and Vehicle Position**
+  <br><br>
+
 
 **Features**
 Map-less autonomous navigation in outdoor environments
