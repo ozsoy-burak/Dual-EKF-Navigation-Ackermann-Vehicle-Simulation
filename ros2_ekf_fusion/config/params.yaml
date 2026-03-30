@@ -1,0 +1,61 @@
+vehicle_simulator:
+  ros__parameters:
+    wheelbase: 2.7              
+    max_speed: 15.0             
+    max_steering_angle: 0.52   
+    max_acceleration: 3.0       
+    max_steering_rate: 1.0     
+    update_rate: 50.0           
+    initial_x: 0.0
+    initial_y: 0.0
+    initial_theta: 0.0
+
+sensor_publisher:
+  ros__parameters:
+
+    wheel_odom:
+      rate_hz: 50.0
+      linear_x_std: 0.03       
+      angular_z_std: 0.08      
+      linear_bias: 0.005      
+      drift_rate: 0.0002       
+
+    imu:
+      rate_hz: 200.0
+      accel_std: 0.05           
+      gyro_std: 0.003           
+      accel_bias: 0.02          
+      gyro_bias: 0.001          
+      accel_drift_rate: 0.0001  
+      gyro_drift_rate: 0.00005
+
+
+    camera_odom:
+      rate_hz: 30.0
+      linear_std: 0.05          
+      angular_std: 0.02         
+      scale_error: 0.02         
+
+    gps:
+      origin_lat: 39.9334
+      origin_lon: 32.8597
+      standard:
+        rate_hz: 5.0
+        position_std: 1.5
+        multipath_std: 5.0
+        multipath_prob: 0.02
+    rtk:
+        rate_hz: 10.0
+        fix_std: 0.02
+        float_std: 0.40
+        heading_std: 0.01
+        float_prob: 0.05
+
+
+keyboard_teleop:
+  ros__parameters:
+    max_speed: 15.0
+    max_steering: 0.52
+    speed_step: 0.5             
+    steer_step: 0.05            
+    publish_rate: 20.0          
