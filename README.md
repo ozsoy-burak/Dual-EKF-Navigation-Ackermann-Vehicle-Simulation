@@ -45,6 +45,18 @@ The localization unit operates in two stages following ROS REP-105 standards:
 **Mahalanobis Distance Filtering**: Detects and rejects outlier GPS readings.
 **Adaptive Covariance Scaling**: Ensures the system relies on local odometry during sudden GPS jumps.
 
+<img width="920" height="780" alt="START" src="https://github.com/user-attachments/assets/c15e0788-daff-47b4-85ac-7e2d0b2d2c3c" />
+
+  **Figure 3: True/Local/Global EKF Outputs**
+
+<img width="316" height="244" alt="Screenshot from 2026-03-30 19-22-46" src="https://github.com/user-attachments/assets/e9234d28-0350-4063-8241-b026da2dd1a6" />
+
+  **Figure 4: Map->Odom Tf Transformation**
+
+  
+<img width="975" height="659" alt="Screenshot from 2026-03-30 19-21-25" src="https://github.com/user-attachments/assets/3c6665b8-5f28-44bc-993c-9d3e3f336e9f" />
+
+  **Figure 5: Comparing Local Odometry/Global Odometry/True State**
 
 **Pure Pursuit Navigation and Goal-Reaching Control**
 
@@ -52,6 +64,10 @@ The control module leverages the calculated localization to guide the vehicle to
 
 **Dynamic Look-Ahead Distance ($L_d$)**: Adjusted according to the vehicle's speed to reduce overshoot in curves.
 **Error-Compensated Goal Control**: The vehicle verifies goal arrival not only based on local odometry but also using the Map-to-Base transformation corrected by the Global EKF. This ensures the vehicle reaches the exact goal even under sensor drift or GPS inaccuracies.
+
+<img width="958" height="746" alt="Screenshot from 2026-03-30 19-33-27" src="https://github.com/user-attachments/assets/79855f17-ef86-4e03-9c09-c58a41ac3219" />
+
+  **Figure 6: Target Points and Vehicle Position**
 
 **Features**
 Map-less autonomous navigation in outdoor environments
