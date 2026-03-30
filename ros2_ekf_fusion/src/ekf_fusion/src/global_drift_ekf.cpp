@@ -95,7 +95,7 @@ void GlobalEkfNode::publishGlobalOdom() {
     nav_msgs::msg::Odometry global_odom_msg;
     global_odom_msg.header.stamp = current_time;
     global_odom_msg.header.frame_id = "map";
-    global_odom_msg.child_frame_id = "map";
+    global_odom_msg.child_frame_id = "base_link";
 
     global_odom_msg.pose.pose.position.x = global_x;
     global_odom_msg.pose.pose.position.y = global_y;
